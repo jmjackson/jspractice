@@ -90,8 +90,37 @@ console.log(findmax(arreglo));
 function title_case(string) {
     const words=string.toLowerCase().split(' ');
 
-    for (let index = 0; index < string.length; index++) {
-        words[index]=words[i][0].toUpperCase()+words[index].slice(1);
+    for (let index = 0; index < words.length; index++) {
+        words[index]=words[index][0].toUpperCase()+words[index].slice(1);
     }
     return words.join(' ');
 }
+
+console.log(title_case('este archivo es title case'));
+
+//funcion de reverse string
+function reverse_string(str){
+    return str.split(' ').reverse().join(' ');
+}
+
+console.log(reverse_string('este es un string que se trabajara en reversa'));
+
+//Otra solución es la siguiente.
+
+const reversa=(str)=>str.split(' ').reverse().join(' ');
+
+console.log(reversa('este es otra forma de reversa'));
+
+//Una ultima forma mas 
+function reversed(string){
+    let reser='';
+    for (let index = string.length-1; index>=0; index--) {
+        reser += string[index];
+        
+    }
+    return reser;
+}
+
+//probemos esta otra solución
+
+console.log(reversed('probemos esta otra solucion'));
