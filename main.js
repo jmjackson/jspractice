@@ -124,3 +124,4 @@ function reversed(string){
 //probemos esta otra solución
 
 console.log(reversed('probemos esta otra solucion'));
+
